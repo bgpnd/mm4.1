@@ -1,0 +1,280 @@
+<link href="asset/css/jo.css" rel="stylesheet" type="text/css" />
+
+<div class="content transdetail">
+	<div class="wrapper">
+
+		<div class="col-500">
+
+			<script type="text/javascript">
+			$(function(){
+				$('#payment-tab').tabDisplay();
+			});
+			</script>
+
+			<div id="payment-tab" class="paymentbox tabsystem">
+
+				<div class="title">
+					PILIH METODE PEMBAYARAN
+				</div>
+
+				<ul class="tab-button payment-tab">
+
+					<li>
+						<a class="tab-trigger tab-on" href="javascript:void(0);" rel="tab-kartukredit">
+							<div class="ico kartukredit"></div>
+							KARTU KREDIT
+						</a>
+					</li>
+
+					<li>
+						<a class="tab-trigger" href="javascript:void(0);" rel="tab-transferbank">
+							<div class="ico transferbank"></div>
+							TRANSFER BANK
+						</a>
+					</li>
+
+					<li>
+						<a class="tab-trigger" href="javascript:void(0);" rel="tab-bayarditempat">
+							<div class="ico bayarditempat"></div>
+							BAYAR DI TEMPAT
+						</a>
+					</li>
+
+					<li>
+						<a class="tab-trigger" href="javascript:void(0);" rel="tab-mandiriclickpay">
+							<div class="ico mandiriclickpay"></div>
+							MANDIRI CLICKPAY
+						</a>
+					</li>
+
+					<li>
+						<a class="tab-trigger" href="javascript:void(0);" rel="tab-cimbclicks">
+							<div class="ico cimbclicks"></div>
+							CIMB CLICKS
+						</a>
+					</li>
+					
+
+				</ul>
+
+				<ul class="tab-content paymentform userform">
+
+					<li id="tab-kartukredit" class="display-list" style="display:block; ">
+
+						<div class="form_row">
+							<label for="username" class="big">NOMOR KARTU</label>
+							<br />
+							<input id="username" type="text" class="inputfield" />
+						</div>
+
+						<div class="form_row">
+							<div class="kiri">
+								<label for="">Tanggal Kadaluarsa</label>
+								<br />
+
+								<div class="kiri">
+									<input id="" type="text" class="inputfield" />
+								</div>
+
+								<div class="kanan">
+									<input id="" type="text" class="inputfield" />
+								</div>
+
+								<div class="clr"></div>
+							</div>
+
+							<div class="kanan" style="padding-left:30px;">
+								<label for="">CCV/CVV</label>&nbsp;&nbsp;&nbsp;&nbsp;<div class="ico ccv"></div>
+								<br />
+								<input id="" type="text" class="inputfield" />
+							</div>
+
+							<div class="clr"></div>
+
+						</div>
+
+						<div class="form_row">
+							<label>Menerima Pembayaran dari</label>
+							<br />
+							<div class="ico visabig"></div>
+							<div class="ico mastercardbig"></div>
+						</div>
+
+						<a class="paymentsubmit btn l red" href="#">BAYAR</a>
+
+					</li>
+
+					<li id="tab-transferbank" class="display-list">
+						TRANSFER BANK
+						<p>Silakan lakukan pembayaran ke salah satu rekening di bawah ini.<br>Mohon untuk dapat melakukan pembayaran dalam waktu 1 hari (24 jam)</p>
+						<p><img src="asset/images/bank-acc.jpg"></p>
+						<p>Pemesanan dengan transfer bank akan otomatis dibatalkan oleh sistem kami jika pembayaran tidak diterima dalam waktu 4jam.</p>
+						<p>
+							Pilih Bank yang akan digunakan:<br>
+							<SELECT class="mg10 inputfield">
+								<option value="1">BCA</option>
+								<option value="2">BCA</option>
+								<option value="3">BCA</option>
+								<option value="4">BCA</option>
+							</SELECT>
+							Nama Pengirim<br>
+							<input type="text" class="inputfield mg10">
+						</p>
+						<a class="paymentsubmit btn l red" href="#">KONFIRMASI</a>
+
+					</li>
+					<li id="tab-bayarditempat" class="display-list">
+						BAYAR DI TEMPAT
+						<p>Pembayaran di tempat hanya bisa dengan uang tunai dengan nilai maksimum per pemesanan <span class="harga">3.000.000</p>
+						<p>Pesanan di atas nilai tersebut akan dibatalkan</p>
+						<a class="paymentsubmit btn l red" href="#">KONFIRMASI</a>
+
+					</li>
+					<li id="tab-mandiriclickpay" class="display-list">
+						MANDIRI CLICK PAY
+						<p>Bayar pesanan andan dengan:
+							<ul style="list-style:disc">
+								<li>Anda dipastikan untuk memiliki User ID Mandiri ClickPay dan Token Mandiri.</li>
+								<li>Pastikan Anda sudah aktivasi Mandiri ClickPay di <a href="www.bankmandiri.co.id" target="bankacc">www.bankmandiri.co.id</a></li>
+							</ul>
+							<div class="mg15"></div>
+							Nomor Kartu Mandiri ClickPay
+							<input type="text" class="inputfield mb10">
+						</p>
+						<a class="paymentsubmit btn l red" href="#">KONFIRMASI</a>
+					</li>
+					<li id="tab-cimbclicks" class="display-list">
+						CIMB CLICKS
+						<p>Bayar pesanan anda dengan:</p>
+						<p>Setelah melakukan konfirmasi pesanan, Anda akan terhubung ke laman CIMB Clicks untuk melakukan konfirmasi pembayaran.</p>
+
+						<a class="paymentsubmit btn l red" href="#">KONFIRMASI</a>
+					</li>
+				</ul>	
+				
+			</div>
+
+
+		</div>
+
+		<div class="col-500">
+
+			<div class="transbox shippingaddress">
+
+				<div class="title">
+					ALAMAT PENGIRIMAN
+				</div>
+
+				<p>
+					<b>CHRISTIE YOUNG</b>
+				</p>
+
+				<p>
+					<b>Alamat Pengiriman:</b>
+					<br />
+					Belezza Shopping Arcade, 3rd Floor #333
+					<br />
+					Jl. Letjen Soepeno 34, Permata Hijau 12210
+				</p>
+
+				<p>
+					<b>No.HP:</b>
+					<br />
+					081253456789
+				</p>
+
+
+			</div>
+			
+			<div class="transbox">
+
+				<div class="title">
+					DETAIL PESANAN
+				</div>
+
+				<div class="transtable">
+
+					<table width="100%" cellspacing="0">
+						<tr>
+							<th width="50%">
+								PRODUK
+							</th>
+
+							<th class="tc" width="15%">
+								JUMLAH
+							</th>
+
+							<th class="tc" width="35%">
+								HARGA
+							</th>
+						</tr>
+
+						<tr class="bb">
+							<td>
+								<b>BIA BY ZASKIA MECCA</b>
+								<br />
+								Amaya Coklat
+								<br />
+								Ukuran : M | Warna : Coklat
+							</td>
+
+							<td class="tc">
+								1
+							</td>
+
+							<td class="tr">
+								IDR 15.750.000,00
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<b>SUBTOTAL</b>
+								
+							</td>
+
+							<td class="tr">
+								IDR 15.750.000,00
+							</td>
+						</tr>
+
+						<tr class="bb">
+							<td>
+								<b>ONGKOS KIRIM</b>
+								
+							</td>
+
+
+							<td class="tr" colspan="2">
+								IDR 9.000,00
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<b>TOTAL</b>
+								
+							</td>
+
+
+							<td class="tr" colspan="2">
+								<b class="totalprice">IDR 166.500.000,00</b>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div class="clr"></div>
+
+	</div>
+
+
+
+</div>
+
