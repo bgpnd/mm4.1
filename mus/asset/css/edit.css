@@ -149,12 +149,13 @@
 }
 .news{
   text-align: center;
-  font-size: 75px;
-  padding-top: 75px;
+  font-size: 60px;
+  padding-top: 110px;
 }
 .news p{
   font-size: 12px;
   font-weight: bolder;
+  margin: 0 0 40px;
 }
 .sidebar-left p{
   margin: 0 0 20px;
@@ -163,5 +164,15 @@
   padding: 0 !important;
 }
 .grey-button{
-
+  background: #6D6E72;
+  font-weight: bolder;
+  font-size: 15px;
+  color: #fff;
+  padding: 5px 7px; 
+  border: none;
+  float: right;
+  margin-bottom: 10px;
+}
+.rows{
+  margin-bottom: 15px;
 }
