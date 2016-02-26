@@ -130,12 +130,15 @@
 }
 .sidebar-left h4{
     font-weight: bolder;
+    color: #000;
 }
 .sidebar-left h3{
     margin-top: 0;
+    color: #000;
 }
 .boxblack{
     border: 1px solid #000;
+    margin-bottom: 25px;
 }
 .dgreen{
     color: #0E4B2B;
@@ -176,4 +179,10 @@
 }
 .rows{
   margin-bottom: 15px;
+}
+.bot-pa .grey-button{
+  margin-top: -50px;
+}
+.bot-pa h4{
+  color: #000;
 }
