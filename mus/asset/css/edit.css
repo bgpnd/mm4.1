@@ -104,22 +104,33 @@
   border-color: #ddd #ddd #ddd transparent;
   *border-left-color: #ffffff;
 }
-.side li.active > a{
-    color: #fff !important;
+.sidebar-left li.active > a{
+    color: #fff;
     font-weight: bolder;
-    background-color: #FF311F !important;
-    border-color: transparent !important;
+    background-color: #FF4200;
+    padding: 10px 25px;
+    margin-left: -25px;
+    border-color: transparent;
     border-radius: 0;
 }
-.side li > a{
+.sidebar-left li{
+    list-style-type: none;
+    padding: 10px 25px;
+}
+.sidebar-left ul{
+  padding-left: 0;
+}
+.sidebar-left li > a{
     font-weight: bolder;
     color: #000;
 }
-.side h4{
+.sidebar-left li > a:hover{
+  text-decoration: none;
+}
+.sidebar-left h4{
     font-weight: bolder;
 }
-.side h3{
-    font-weight: bolder;
+.sidebar-left h3{
     margin-top: 0;
 }
 .boxblack{
@@ -130,9 +141,27 @@
     font-weight: bolder;
 }
 .border-right{
-    border-right: 1px solid #333;
+    border-right: 1px solid #999;
     margin: 10px 0;
 }
-.side td{
-    padding: 5px;
+.sidebar-left td{
+    padding: 5px 10px 5px 0;
+}
+.news{
+  text-align: center;
+  font-size: 75px;
+  padding-top: 75px;
+}
+.news p{
+  font-size: 12px;
+  font-weight: bolder;
+}
+.sidebar-left p{
+  margin: 0 0 20px;
+}
+.nopad{
+  padding: 0 !important;
+}
+.grey-button{
+
 }

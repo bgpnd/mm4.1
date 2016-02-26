@@ -10,7 +10,7 @@ if(!$page) {
 	include ('asset/html/end.html');
 }else {
 	$pager = ($_GET['page']);
-	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih') {
+	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun') {
 		include ('asset/html/header1.html');
 		include ('asset/html/navbar.html');
 		if ($pager == 'list') {
@@ -21,6 +21,8 @@ if(!$page) {
 			include ('asset/html/element.html');
 		}elseif ($pager == 'terimakasih') {
 			include ('asset/html/content-success.html');
+		}elseif ($pager == 'panelakun') {
+			include ('asset/html/panel-akun.html');
 		}else{
 			include ('asset/html/blank.html');
 		}
