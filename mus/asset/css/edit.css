@@ -226,3 +226,10 @@
   padding-bottom: 10px; 
   border-bottom: 3px solid #999;
 }
+.infoalamat p{
+  margin: 0 0 5px;
+  color: #000;
+}
+.tmbhalmt{
+  margin: 15px 0;
+}

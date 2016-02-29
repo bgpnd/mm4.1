@@ -10,7 +10,7 @@ if(!$page) {
 	include ('asset/html/end.html');
 }else {
 	$pager = ($_GET['page']);
-	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun') {
+	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun' || $pager == 'informasialamat') {
 		include ('asset/html/header1.html');
 		include ('asset/html/navbar.html');
 		if ($pager == 'list') {
@@ -25,6 +25,8 @@ if(!$page) {
 			include ('asset/html/panel-akun.html');
 		}elseif ($pager == 'informasiakun') {
 			include ('asset/html/informasi-akun.html');
+		}elseif ($pager == 'informasialamat') {
+			include ('asset/html/informasi-alamat.html');
 		}else{
 			include ('asset/html/blank.html');
 		}
