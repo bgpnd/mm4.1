@@ -226,10 +226,23 @@
   padding-bottom: 10px; 
   border-bottom: 3px solid #999;
 }
-.infoalamat p{
+.boxes p{
   margin: 0 0 5px;
   color: #000;
 }
 .tmbhalmt{
   margin: 15px 0;
+}
+.pesanansaya tr:nth-child(1){
+  border-bottom: 2px solid #b2b2b2; 
+}
+.pesanansaya td{
+  padding: 15px 30px;
+  text-align: center;
+  color:#000;
+}
+.nwsletter{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 40px;
 }
