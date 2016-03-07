@@ -27,8 +27,8 @@
 
 .tabs-below > .nav-tabs > li > a {
   -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 .tabs-below > .nav-tabs > li > a:hover,
@@ -64,8 +64,8 @@
 .tabs-left > .nav-tabs > li > a {
   margin-right: -1px;
   -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .tabs-left > .nav-tabs > li > a:hover,
@@ -89,8 +89,8 @@
 .tabs-right > .nav-tabs > li > a {
   margin-left: -1px;
   -webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .tabs-right > .nav-tabs > li > a:hover,
@@ -105,56 +105,56 @@
   *border-left-color: #ffffff;
 }
 .sidebar-left li.active{
-    font-weight: bolder;
-    background-color: #FF4200;
-    padding: 10px 25px;
-    border-color: transparent;
-    border-radius: 0;
+  font-weight: bolder;
+  background-color: #FF4200;
+  padding: 10px 25px;
+  border-color: transparent;
+  border-radius: 0;
 }
 .sidebar-left li.active > a{
-    color: #fff;  
+  color: #fff;  
 }
 .sidebar-left li{
-    list-style-type: none;
-    padding: 10px 25px;
+  list-style-type: none;
+  padding: 10px 25px;
 }
 .sidebar-left ul{
   padding-left: 0;
 }
 .sidebar-left li > a{
-    font-weight: bolder;
-    color: #000;
+  font-weight: bolder;
+  color: #000;
 }
 .sidebar-left li > a:hover{
   text-decoration: none;
 }
 .sidebar-left h4{
-    font-weight: bolder;
-    color: #000;
-    display: inline-block;
+  font-weight: bolder;
+  color: #000;
+  display: inline-block;
 }
 .sidebar-left h3{
-    margin-top: 0;
-    color: #000;
+  margin-top: 0;
+  color: #000;
 }
 .sidebar-left h5{
-    color: #000;
-    font-weight: bolder;
+  color: #000;
+  font-weight: bolder;
 }
 .boxblack{
-    border: 1px solid #000;
-    margin-bottom: 25px;
+  border: 1px solid #000;
+  margin-bottom: 25px;
 }
 .dgreen{
-    color: #0E4B2B;
-    font-weight: bolder;
+  color: #0E4B2B;
+  font-weight: bolder;
 }
 .border-right{
-    border-right: 1px solid #999;
-    margin: 10px 0;
+  border-right: 1px solid #999;
+  margin: 10px 0;
 }
 .sidebar-left td{
-    padding: 5px 10px 5px 0;
+  padding: 5px 10px 5px 0;
 }
 .news{
   text-align: center;
@@ -164,7 +164,7 @@
 .news p{
   font-size: 12px;
   font-weight: bolder;
-  margin: 0 0 50px !important;
+  margin: 0 0 68px !important;
 }
 .sidebar-left p{
   margin: 0 0 15px;
@@ -200,6 +200,7 @@
 }
 .boxinput{
   border: 1px solid #d9d9d9;
+  padding: 3px;
 }
 .w65{
   width: 50%;
@@ -247,5 +248,133 @@
 .nwsletter{
   text-align: center;
   font-size: 60px;
-  padding-top: 40px;
+  padding-top: 28px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.page h2{
+  font-weight: bolder;
+  color: #000;
+  display: inline-block;
+  margin-top: -25px;
+  vertical-align: middle;
+}
+.icon-page{
+  vertical-align: middle;
+  font-size: 40px;
+  padding: 0 10px 9px;
+}
+.page h4{
+  font-weight: bolder;
+  color: #1d4922;
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+.widthfull {
+  width: 100%;
+}
+.container { 
+  max-width: 996px !important;
+}
+.padtop{
+  padding-top: 20px;
+}
+.confirm{
+  background: #FF4200 !important;
+  margin-top: 25px;
+  padding: 15px 60px;
+}
+.center{
+  text-align: center;
+}
+.boldh5 h5{
+  font-weight: bolder;
+  color: #000;
+}
+.bantuan h5{
+  color: #000;
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+.bantuan .col-md-4{
+  text-align: center;
+}
+#pemesanan-sprite{
+  width: 85px;
+  height: 79px;
+  background: url(../images/sprite2.png) -5px 5px;
+  margin: 0 auto;
+}
+#voucher-sprite{
+  width: 79px;
+  height: 79px;
+  background: url(../images/sprite2.png) -90px 5px;
+  margin: 0 auto;
+}
+#pembayaran-sprite{
+  width: 66px;
+  height: 79px;
+  background: url(../images/sprite2.png) -170px 5px;
+  margin: 0 auto;
+}
+#pengiriman-sprite{
+  width: 94px;
+  height: 79px;
+  background: url(../images/sprite2.png) 259px 5px;
+  margin: 0 auto;
+}
+#pengembalian-sprite{
+  width: 100px;
+  height: 79px;
+  background: url(../images/sprite2.png) 164px 5px;
+  margin: 0 auto;
+}
+#hubungi-sprite{
+  width: 56px;
+  height: 79px;
+  background: url(../images/sprite2.png) 60px 5px;
+  margin: 0 auto;
+}
+#bantuan-sprite{
+  width: 43px;
+  height: 43px;
+  background: url(../images/sprite2.png) 243px -80px;
+  margin: 0 auto;
+  display: inline-block;
+}
+#kebijakan-sprite{
+  width: 43px;
+  height: 43px;
+  background: url(../images/sprite2.png) -160px -80px;
+  display: inline-block;
+}
+#tentang-sprite{
+  width: 43px;
+  height: 43px;
+  background: url(../images/sprite2.png) -27px -80px;
+  display: inline-block;
+}
+#syarat-sprite{
+  width: 43px;
+  height: 43px;
+  background: url(../images/sprite2.png) -72px -80px;
+  display: inline-block;
+}
+#konfirmasi-sprite{
+  width: 43px;
+  height: 43px;
+  background: url(../images/sprite2.png) -115px -80px;
+  display: inline-block;
+}
+#user-sprite{
+  width: 22px;
+  height: 21px;
+  background: url(../images/sprite2.png) -4px -80px;
+  display: inline-block;
+}
+#news-sprite{
+  width: 49px;
+  height: 43px;
+  background: url(../images/sprite2.png) -206px -80px;
+  display: inline-block;
 }

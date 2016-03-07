@@ -10,7 +10,7 @@ if(!$page) {
 	include ('asset/html/end.html');
 }else {
 	$pager = ($_GET['page']);
-	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun' || $pager == 'informasialamat'  || $pager == 'pesanansaya' || $pager == 'newsletter') {
+	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun' || $pager == 'informasialamat'  || $pager == 'pesanansaya' || $pager == 'newsletter' || $pager == 'kebijakanprivasi' || $pager == 'tentangkami' || $pager == 'konfirmasipembayaran' || $pager == 'syaratketentuan' || $pager == 'pusatbantuan') {
 		include ('asset/html/header1.html');
 		include ('asset/html/navbar.html');
 		if ($pager == 'list') {
@@ -31,6 +31,16 @@ if(!$page) {
 			include ('asset/html/pesanan-saya.html');
 		}elseif ($pager == 'newsletter') {
 			include ('asset/html/newsletter.html');
+		}elseif ($pager == 'kebijakanprivasi') {
+			include ('asset/html/kebijakan-privasi.html');
+		}elseif ($pager == 'tentangkami') {
+			include ('asset/html/tentang-kami.html');
+		}elseif ($pager == 'konfirmasipembayaran') {
+			include ('asset/html/konfirmasi-pembayaran.html');
+		}elseif ($pager == 'syaratketentuan') {
+			include ('asset/html/syarat-ketentuan.html');
+		}elseif ($pager == 'pusatbantuan') {
+			include ('asset/html/pusat-bantuan.html');
 		}else{
 			include ('asset/html/blank.html');
 		}
