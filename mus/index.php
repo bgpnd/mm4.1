@@ -10,7 +10,7 @@ if(!$page) {
 	include ('asset/html/end.html');
 }else {
 	$pager = ($_GET['page']);
-	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun' || $pager == 'informasialamat'  || $pager == 'pesanansaya' || $pager == 'newsletter' || $pager == 'kebijakanprivasi' || $pager == 'tentangkami' || $pager == 'konfirmasipembayaran' || $pager == 'syaratketentuan' || $pager == 'pusatbantuan') {
+	if ($pager == 'list' || $pager == 'detail' || $pager == 'terimakasih' || $pager == 'panelakun' || $pager == 'informasiakun' || $pager == 'informasialamat'  || $pager == 'pesanansaya' || $pager == 'newsletter' || $pager == 'kebijakanprivasi' || $pager == 'tentangkami' || $pager == 'konfirmasipembayaran' || $pager == 'syaratketentuan' || $pager == 'pusatbantuan' || $pager == 'orderdetail' || $pager == 'owl') {
 		include ('asset/html/header1.html');
 		include ('asset/html/navbar.html');
 		if ($pager == 'list') {
@@ -41,6 +41,10 @@ if(!$page) {
 			include ('asset/html/syarat-ketentuan.html');
 		}elseif ($pager == 'pusatbantuan') {
 			include ('asset/html/pusat-bantuan.html');
+		}elseif ($pager == 'orderdetail') {
+			include ('asset/html/order-detail.html');
+		}elseif ($pager == 'owl') {
+			include ('asset/html/owl.html');
 		}else{
 			include ('asset/html/blank.html');
 		}
