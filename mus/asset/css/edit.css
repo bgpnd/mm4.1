@@ -454,7 +454,26 @@ table img{
   padding: 10px 10px;
 }
 .item {
-  height: 10rem;
-  background: #4DC7A0;
-  padding: 1rem;
+  height: 400px;
+}
+.owl-prev{
+  display: inline-block;
+  float: left;
+}
+.owl-next{
+  display: inline-block;
+  float: right;
+}
+.item h5{
+  display: inline-block;
+  color: #385E36;
+  font-weight: bolder;
+}
+.item h4:nth-last-child(1){
+  display: inline-block;
+  color: #fff;
+  background: #C4161C;
+  border-radius: 25px;
+  padding: 10px;
+  float: right;
 }
