@@ -479,14 +479,12 @@ table img{
 .owlprev{
   display: inline-block;
   font-size: 25px;
-  left: -30px;
   top: 150px;
+  width: 30px !important;
 }
 .owlnext{
   display: inline-block;
   font-size: 25px;
-  right: -30px;
-}
-.owl-carousel{
-  top: -50px;
+  top: 150px;
+  width: 30px !important;
 }
