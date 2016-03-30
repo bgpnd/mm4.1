@@ -1399,7 +1399,7 @@ h3 {
 }
 .subscribe-form-inner {
   display: block;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .subscribe-form-inner .input-group-btn {
   font-size: 15px;
@@ -2374,24 +2374,24 @@ footer .footer-body .copyright p .fa {
  * Partner Section Style
  * ===============================
  */
- #partner {
+ #whatis {
   background-color: #6f6f6f;
   border-bottom: 30px solid #1B2232;
 }
-#partner .section-separator {
+#whatis .section-separator {
   padding: 29px 0 50px;
 }
-#partner ul li {
+#whatis ul li {
   float: left;
 }
-#partner ul li a {
+#whatis ul li a {
   background-color: transparent;
   text-align: center;
 }
-#partner ul li a:hover {
+#whatis ul li a:hover {
   background-color: transparent;
 }
-#partner ul li a img {
+#whatis ul li a img {
   max-width: 100% !important;
   margin: auto;
 }
@@ -2865,6 +2865,7 @@ blockquote:after{
 .shop{
   border-bottom: 8px solid #F9D20A;
   margin: 50px 0 40px;
+  color: #fff;
 }
 .yellow-box{
   background: #F9D20A;
@@ -2915,9 +2916,7 @@ blockquote:after{
   padding-bottom: 50px;
 }
 .box-yellow{
-  border-right: 1px solid #F9D20A;
-  border-top: 1px solid #F9D20A;
-  border-left: 1px solid #F9D20A;
+  border:  1px solid #F9D20A;
 }
 .owl-controls {
   background: #1B2232;
@@ -3076,12 +3075,20 @@ blockquote:after{
 .overlay{
   background: #1B2232;
 }
-#partner {
+#whatis {
+  background-color: #716D72;
+  border-bottom: 30px solid #1D2135;
+}
+#subscribe {
   background-color: #716D72;
   border-bottom: 30px solid #1D2135;
 }
 .newletter {
   border-bottom: 10px solid #F9D20A !important;
+  background: #fff;
+}
+#twitter{
+  background: #fff;
 }
 .son{
   border-bottom: 0 solid transparent;
@@ -3152,4 +3159,12 @@ blockquote:after{
 }
 @media (min-width: 1200px) {
 
+}
+.twitwit h5{
+  font-size: 35px;
+  font-family: BebasNeue;
+  color: #000;
+}
+.tengah{
+  margin: 0 auto;
 }
