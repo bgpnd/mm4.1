@@ -2273,7 +2273,7 @@ footer .footer-body .copyright p .fa {
   line-height: 45px;
   background: #fff;
   padding: 52px 0;
-  border-radius:100px;
+  border-radius:50%;
 }
 .count_down .background .title {
   font-family: "Montserrat", sans-serif;
@@ -2815,6 +2815,7 @@ aside .thumbnail {
   font-size: 100px;
   letter-spacing: 12px;
   color: #fff;
+  line-height: 77px;
   margin-bottom: 25px;
 }
 .line-yellow{
@@ -2831,6 +2832,7 @@ aside .thumbnail {
   color: #1B2232;
   font-family: BebasNeue;
   letter-spacing: 3px;
+  line-height: 65px;
 }
 blockquote:before{
   content: open-quote;
@@ -2930,7 +2932,7 @@ blockquote:after{
   float: left;
 }
 .col-25p{
-  width: 24.66%;
+  width: 24%;
   display: inline-block;
   text-align: center;
 }
@@ -3141,4 +3143,13 @@ blockquote:after{
 }
 .newsletters::-webkit-input-placeholder{
   color: white;
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+
 }
