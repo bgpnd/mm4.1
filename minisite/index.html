@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="assets/css/hover-effect.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/forestGreen.css"/>
 </head>
 <body>
     <header class="header-background header " id="header" data-stellar-background-ratio="0.5"> 
@@ -338,7 +337,49 @@
             </div>
         </div>
     </section> 
-    <section class="register-background register" id="partner"> 
+
+    <style type="text/css">
+        .partner-slide {
+            position: relative;
+            padding-bottom: 100px;
+            background-color: #1b2332;
+        }
+        .partner-slide .yellow-box,
+        .partner-slide .box-yellow {
+            height: 240px;
+        }
+        .partner-slide .box-yellow {
+            background-color: #fff;
+        }
+        .partner-slide .yellow-box > div {
+            margin-top: calc( 50% - 40px) !important;
+        }
+        .partner-slide-owl {
+            position: static;
+        }
+        .partner-slide-owl .owl-controls {
+            position: absolute;
+            border: none !important;
+            width: 100%;
+            left: 0;
+        }
+        .partner-slide-owl .owl-controls .owl-page span {
+            width: 7px !important;
+            height: 7px !important;
+            border-radius: 7px !important;
+            -moz-border-radius: 7px !important;
+            -webkit-border-radius: 7px !important;
+            overflow: hidden;
+            border: 1px solid #fad20b;
+            background-color: #fad20b !important;
+            opacity: 1;
+        }
+        .partner-slide-owl .owl-controls .owl-page.active span {
+            background-color: #fff !important;
+        }
+    </style>
+
+    <section class="partner-slide" id="partner"> 
         <div class="overlay">
             <div class="container">
                 <div class="row register-body section-separator">
@@ -353,187 +394,188 @@
                             <div class="pad-10">
                                 <div class="col-20p yellow-box center">
                                     <div id="partner1"></div>
-                                    <h4>PRODUK</h4><h4>TERBATAS</h4>
                                 </div>
-                                <div class="col-80p box-yellow" id="slider">
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner2"></div>
-                                            </figure>
+                                <div class="col-80p box-yellow">
+                                    <div id="partner-slide" class="partner-slide-owl">
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner2"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner3"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner3"></div>
-                                            </figure>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner4"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner5"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner4"></div>
-                                            </figure>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner2"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner3"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner5"></div>
-                                            </figure>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner4"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner5"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner2"></div>
-                                            </figure>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner2"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner3"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner3"></div>
-                                            </figure>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner4"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner4"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner5"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner2"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner3"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner4"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="view grid">
-                                            <figure class="effect-zoe">
-                                                <div id="partner5"></div>
-                                            </figure>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="list-partner">
-                                            <p>PENAWARAN SPESIAL BANK BCA</p>
-                                            <p>DISKON</p>
-                                            <p>Rp. 50.000</p>
-                                            <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
-                                            <p>KODE VOUCHER</p>
+                                        <div class="item">
+                                            <div class="view grid">
+                                                <figure class="effect-zoe">
+                                                    <div id="partner5"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="list-partner">
+                                                <p>PENAWARAN SPESIAL BANK BCA</p>
+                                                <p>DISKON</p>
+                                                <p>Rp. 50.000</p>
+                                                <p>MINIMUM PEMBELIAN RP. 150.000,-</p>
+                                                <p>KODE VOUCHER</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

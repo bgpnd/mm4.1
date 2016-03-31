@@ -550,6 +550,25 @@ $(function() {
       responsiveRefreshRate : 100
     });
 
+    /**
+     * =======================================
+     * CAROUSEL SLIDER 
+     * =======================================
+     */
+    var owl = $("#partner-slide");
+
+    /* TESTIMONIAL SYNC WITH CLIENTS */
+    owl.owlCarousel({
+      items : 4, //10 items above 1000px browser width
+      itemsDesktop : [1190, 3], //5 items between 1000px and 901px
+      itemsDesktopSmall     : [992,3], // 3 items betweem 992px and 769px
+      itemsTablet       : [768,2], // 3 items between 768 and 601
+      itemsTabletSmall       : [480,1], // 2 items in widen mobile device
+      itemsMobile       : [320,1], // 1 items in any small mobile device
+      pagination: true,
+      responsiveRefreshRate : 100
+    });
+
 
     /**
      * =======================================
