@@ -630,49 +630,6 @@ $(function() {
 
   });
 
-  /**
-   * =======================================
-   * GOOGLE MAP 
-   * =======================================
-   */
-  function init_map() {
-    var myLocation = new google.maps.LatLng(24.892467,91.87048);
-
-    var draggableValue;
-      if($(document).width() <= 768){
-      draggableValue = false;   /*This option is used for disabling drag.*/
-    }
-    else{
-      draggableValue = true;   /*This option is used for disabling drag.*/
-    }
-
-    var mapOptions = {
-      generate_controls : false,
-      center: myLocation,
-      zoom: 16,
-      mapTypeControl: true,           /*This option will hide map type.*/
-      draggable: draggableValue,
-      scaleControl: false,            //This option is used for disable zoom by scale.
-      scrollwheel: false,             /*This option is used for disable zoom on mouse.*/
-      navigationControl: true,  
-      zoomControlOptions : {
-        style : google.maps.ZoomControlStyle.SMALL,
-      },
-      styles: [{"stylers": [{"saturation": -100}]}],
-      streetViewControl: true  
-      
-    };
-
-    var marker = new google.maps.Marker({
-      position: myLocation,
-      title:"Peggy Guggenheim Collection"});
-      
-    var map = new google.maps.Map(document.getElementById("map"),
-      mapOptions);
-
-    marker.setMap(map); 
-  }
-  google.maps.event.addDomListener(window, 'load', init_map);
  
 });
 
