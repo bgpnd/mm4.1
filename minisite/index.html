@@ -21,6 +21,67 @@
     <link rel="stylesheet" href="assets/css/hover-effect.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style type="text/css">
+        .socmed-share {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            right: 0;
+            top: 200px;
+        }
+        .socmed-share li {
+            width: 56px;
+            height: 22px;
+            line-height: 22px;
+            background: transparent url('assets/images/button-social-media.png') no-repeat center center;
+            margin-bottom: 5px;
+        }
+        .socmed-share li:last-child {
+            margin-bottom: 0;
+        }
+        .socmed-share li a {
+            width: 56px;
+            height: 22px;
+            background: transparent url('assets/images/sprite-social-media.png') no-repeat;
+            display: block;
+            color: #313330;
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .socmed-share li a:hover {
+            text-decoration: none;
+        }
+        .socmed-share li.facebook a {
+            background-position: 4px 4px;
+        }
+        .socmed-share li.twitter a {
+            background-position: 4px -22px;
+        }
+        .socmed-share li.pinterest a {
+            background-position: 4px -48px;
+        }
+        .socmed-share li.google a {
+            background-position: 4px -76px;
+        }
+        .socmed-share li a span {
+            width: 35px;
+            float: right;
+        }
+        .socmed-share li a span.count {
+            background-color: #fff;
+            text-align: center;
+            display: none;
+        }
+        .socmed-share li a:hover span.text {
+            display: none;
+        }
+        .socmed-share li a:hover span.count {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header class="header-background header " id="header" data-stellar-background-ratio="0.5"> 
@@ -712,6 +773,38 @@
                 </div>
             </div>
         </footer> 
+
+
+    <ul id="socmed-share" class="socmed-share">
+        <li class="facebook">
+            <a href="">
+                <span class="text">Like</span> 
+                <span class="count">0</span>
+            </a>
+        </li>
+
+        <li class="twitter">
+            <a href="">
+                <span class="text">Tweet</span> 
+                <span class="count">0</span>
+            </a>
+        </li>
+
+        <li class="pinterest">
+            <a href="">
+                <span class="text">Pin It</span> 
+                <span class="count">0</span>
+            </a>
+        </li>
+
+        <li class="google">
+            <a href="">
+                <span class="text">Share</span> 
+                <span class="count">0</span>
+            </a>
+        </li>
+    </ul>
+
         <script src="assets/js/jquery-1.11.3.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/matchMedia.js"></script>
@@ -730,6 +823,69 @@
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/custom-scripts.js"></script>
+
+        <script type="text/javascript">
+        var MAIN_URL = 'http://www.muslimarket.com/';
+
+        $(function () {
+            $.getJSON("http://graph.facebook.com/?id=" + MAIN_URL, function(data) {
+                console.log('FB: ' + data.shares);
+                $('#socmed-share .facebook .count').html(shortCounter(data.shares));
+            });
+
+            $.getJSON("http://api.pinterest.com/v1/urls/count.json?callback=?&url=" + MAIN_URL, function(data) {
+                console.log('pinterest: ' + data.count);
+                $('#socmed-share .pinterest .count').html(shortCounter(data.count));
+            });
+
+            $.getJSON("http://opensharecount.com/count.json?url=" + MAIN_URL, function(data) {
+                console.log('twitter: ' + data.count);
+                $('#socmed-share .twitter .count').html(shortCounter(data.count));
+            });
+
+            $.getJSON('https://clients6.google.com/rpc?key=AIzaSyBobPnEQJAGBqZNyT7sUCjlW2qtDqSuiUs',
+            {
+               "method":"pos.plusones.get",
+               "id":"p",
+               "params":{
+                  "nolog":true,
+                  "id":MAIN_URL,
+                  "source":"widget",
+                  "userId":"@viewer",
+                  "groupId":"@self"
+               },
+               "jsonrpc":"2.0",
+               "key":"p",
+               "apiVersion":"v1"
+            },
+            function(data){           
+                // console.log('google+: ' + JSON.stringify(data));
+                console.log('google+: ' + data.count);
+                $('#socmed-share .google .count').html(shortCounter(data.count));
+            });
+        });
+
+        function shortCounter(x, legend, power) 
+        {
+            legend = 'OKMGPT';
+            power = 1024;
+            var powerLimit = legend.length - 1, powerIndex = 0;
+            while (x > (power - 1) && powerIndex < powerLimit) 
+            {
+                x = x/power;
+                powerIndex++;
+            }
+            if (powerIndex == 0)
+            {
+                return Math.round(x);
+            } else 
+            {
+                return Math.round(x) + legend[powerIndex];
+            }
+        }
+
+        
+    </script>
     </body>
 
     </html>
