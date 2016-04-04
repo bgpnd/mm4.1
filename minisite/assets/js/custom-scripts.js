@@ -582,7 +582,7 @@ $(function() {
       singleItem : true,
       slideSpeed : 1000,
       navigation: false,
-      pagination:false,
+      pagination:true,
       afterAction : syncPosition,
       responsiveRefreshRate : 200,
       autoPlay: 5000
