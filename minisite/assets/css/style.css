@@ -3234,26 +3234,24 @@ blockquote:after{
 .partner-slide-owl .owl-controls .owl-page.active span {
   background-color: #fff !important;
 }
-.partner-slide1 .owl-controls{
+
+.tweet-slide .owl-controls{
   background: #fff;
   border-right: 0;
   border-top: 0;
   border-left: 0;
 }
-.partner-slide1 .owl-controls .owl-page span{
-  background: #1B2232;
-  border-radius: 50%;
+.tweet-slide .owl-controls .owl-page span{
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 7px !important;
+  -moz-border-radius: 7px !important;
+  -webkit-border-radius: 7px !important;
+  overflow: hidden;
+  border: 1px solid #1B2232;
+  background-color: #1B2232 !important;
   opacity: 1;
 }
-.partner-slide1 .owl-controls .owl-page.active{
-  background: #F9D20A;
-  border-radius: 50%;
-  opacity: 1;
-  border-color: #1B2232;
-  border: 2px solid;
-  width: 18px;
-}
-.partner-slide1 .owl-controls .owl-page.active span{
-  background-color: #F9D20A ;
-  opacity: 0;
+.tweet-slide .owl-controls .owl-page.active span{
+  background-color: #fad20b !important;
 }
