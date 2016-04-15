@@ -1,0 +1,332 @@
+/**
+ * HEADER STICKY
+ */
+.header-sticky {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #1c4922;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+.header-sticky.active {
+    top: 0;
+}
+.header-sticky .wrapper > div {
+    float: left;
+    margin-right: 10px;
+}
+.header-sticky .pull-category {
+    height: 40px;
+    width: 30px;
+    padding: 5px 0;
+    float: left;
+}
+.header-sticky .pull-category button {
+    margin-top: 18px;
+    width: 30px;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.header-sticky .pull-category button .icon-bar {
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+}
+.header-sticky .pull-category button .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.header-sticky .logo {
+    height: 50px;
+    width: 200px;
+}
+.header-sticky .logo a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+}
+.header-sticky .searchbox-sticky {
+    width: 442px;
+    height: 28px;
+    overflow: hidden;
+    margin-top: 11px;
+}
+.header-sticky .searchbox-sticky input[type=text] {
+    height: 28px;
+    padding: 0 15px 0 40px;
+    width: 85%;
+    box-sizing: border-box;
+    float: left;
+}
+.header-sticky .searchbox-sticky input[type=submit] {
+    height: 28px;
+    width: 15%;
+    background: #ff4200;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+}
+.header-sticky .searchbox-sticky::before {
+    content: "";
+    background: url(../images/sprite.png) -125px -63px;
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    z-index: 2;
+    margin: 4px 0 0;
+}
+
+.header-sticky .account {
+    white-space: nowrap;
+    max-width: 130px;
+    overflow: hidden;
+}
+.header-sticky .account ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header-sticky .account li {
+    float: left;
+    margin-right: 5px;
+}
+.header-sticky .account li a,
+.header-sticky .account li span {
+    font-family: 'Montserrat', 'Ubuntu', 'Lato', Arial;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    line-height: 50px;
+}
+.header-sticky .account li a:hover {
+    text-decoration: underline;
+}
+
+.header-sticky .cartbox {
+    float: right !important;
+    margin-right: 0 !important;
+}
+.header-sticky .cartbox .ico {
+    cursor: pointer;
+    background: transparent url(../images/ico-cart-white.png) no-repeat center center;
+    width: 40px; 
+    height: 30px;
+    margin: 10px 5px 10px 0;
+}
+.header-sticky .cartbox .ico .notif {
+    right: -5px;
+    top: -5px;
+    border: none;
+}
+.header-sticky .cartbox .harga {
+    color: #fff;
+}
+
+/**
+ * MAIN CATEGORY
+ */
+
+.tab-content > .tab-pane {
+    display: none;
+}
+.tab-content > .active {
+    display: block;
+}
+
+
+.main-category {
+    padding-right: 10px; 
+    line-height: 1.4em; 
+    z-index: 100; 
+    position: relative;
+    height: 500px;
+}
+.main-category ul,
+.main-category ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.main-category-lv1 > li {
+    width: 100%; 
+    text-transform: uppercase; 
+    font-size: 1.2em; 
+    min-height: 40px; 
+    clear: both; 
+    box-sizing: border-box; 
+    position: static !important;
+}
+.main-category-lv1 > li > a {
+    display: block;
+    padding: 9px 10px 7px 15px;
+    width: 100%;
+    text-transform: uppercase;
+    min-height: 40px;
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+}
+.main-category-lv1 > li .ico {
+    display: block;
+    float: left;
+}
+.main-category-lv1 > li:hover,
+.main-category-lv1 > li.active {
+    background: #ff4200; 
+    color: #fff;
+}
+.main-category-lv1 > li:hover .ico,
+.main-category-lv1 > li.active .ico {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1); 
+    filter: invert(1);
+}
+.main-category-lv1 > li.has-child > a:after,
+.sub-cat > li.has-child > a:before {
+    opacity: 0;
+    content: ""; 
+    position: absolute; 
+    right: -5px;
+    top: 10px; 
+    width: 0;
+    height: 0;  
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(240,240,240,.9) transparent transparent;
+    transition: .3s; 
+}
+.sub-cat > li.has-child > a:before {
+    transition: 0; 
+    top: 9px;
+    right: -4px;
+}
+.main-category-lv1 > li.has-child.active > a:after,
+.sub-cat > li.has-child.active > a:before {
+    opacity: 1;
+    z-index: 1;
+}
+.main-category-lv1 > li.has-child.active > a:after {
+    right: 0;
+}
+
+.vertical-category {
+    position: absolute;
+    top: 0;
+    left: 255px;
+    height: 500px;
+    opacity: 0;
+    visibility: hidden;
+}
+.vertical-category.active {
+    opacity: 1;
+    visibility: visible;
+}
+.vertical-category .sub-cat {
+    color: #000; 
+    background: rgba(240,240,240,.9); 
+    box-shadow: 0 5px 10px rgba(0,0,0,.1); 
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.1); 
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.1); 
+    padding: 4px;
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: auto;
+}
+.vertical-category .main-category-lv2 {
+    width: 188px;
+    height: 100%;
+}
+.vertical-category .main-category-lv3,
+.vertical-category .main-category-lv4 {
+    width: 188px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 188px;
+}
+
+.vertical-category li {
+    display: block;
+    text-transform: uppercase; 
+    font-size: 0.8em; 
+    clear: both; 
+    box-sizing: border-box; 
+}
+.vertical-category li a {
+    padding: 10px;
+    display: block;
+}
+.vertical-category li.active a,
+.vertical-category li a:hover {
+    text-decoration: underline;
+}
+.vertical-category li.has-child::after {
+    content: "›"; 
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.7em; 
+}
+
+
+.navbar-muslim .main-category,
+.header-sticky .pull-category .main-category {
+    position: absolute; 
+    opacity: 0;  
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: #fff;
+    top: 27px; 
+    z-index: 100; 
+    width: 255px;
+    border: 1px solid #eee; 
+    border-top: 0; 
+    box-shadow: 0 5px 10px rgba(0,0,0,.05); 
+    padding: 0;
+    transition: .5s; 
+}
+.navbar-muslim .main-category > ol, 
+.navbar-muslim .main-category > ul,
+.header-sticky .pull-category .main-category > ol, 
+.header-sticky .pull-category .main-category > ul {
+    width: 100%;
+}
+.navbar-muslim .main-category .ico {
+    margin-right: 0; 
+}
+.navbar-muslim .pull-menu-kategori:hover .main-category,
+.header-sticky.active .pull-category:hover .main-category {
+    height: auto;
+    min-height: 508px;
+    max-height: 800px; 
+    overflow: visible; 
+    visibility: visible;
+    opacity: 1; 
+}
+.header-sticky .pull-category .main-category {
+    top: 50px;
+}
+
+/**
+ * re styles
+ */
+
+.transbox .achange {
+    color: #1c4620;
+}

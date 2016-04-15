@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+/* by Jim Raynor */
+
+
+/*tambahan grid*/
+.col-600{width:600px; float:left;}
+.col-400{width:400px; float:left;}
+.col-500{width:500px; float:left;}
+
+/*for header2*/
+.header .main-bar.simple .wrapper{text-align:center;}
+
+/*icon, ntar gabungin ke sprite yah*/
+.ico.fbbig{background: url(../images/sprite2.jpg) 0 0 no-repeat transparent; height:50px; width:50px;}
+.ico.gplusbig{background: url(../images/sprite2.jpg) -50px 0 no-repeat transparent; height:50px; width:50px;}
+.ico.kartukredit{background: url(../images/sprite2.jpg) 0 -100px no-repeat transparent; height:30px; width:40px;}
+.ico.transferbank{background: url(../images/sprite2.jpg) -40px -100px no-repeat transparent; height:30px; width:40px;}
+.ico.visabig{background: url(../images/sprite2.jpg) 0 -50px no-repeat transparent; height:50px; width:80px;}
+.ico.mastercardbig{background: url(../images/sprite2.jpg) -80px -50px no-repeat transparent; height:50px; width:65px;}
+.ico.ccv{background: url(../images/sprite2.jpg) -80px -100px no-repeat transparent; width:28px; height:18px;}
+
+/*button class*/
+.btn{display:inline-block; padding:0 10px; background-color:#eee; color:#333; border:none; letter-spacing:.05em; box-sizing:border-box; text-align:center; font-weight:400;}
+	/*warna button*/
+	.btn.red{background-color:#ff4200; color:#fff;}
+	/*ukuran button*/
+	.btn.s{height:24px; line-height:24px; font-size:12px;}
+	.btn.m{height:30px; line-height:30px;}
+	.btn.l{height:36px; line-height:36px; font-size:15px;}
+
+/*untuk input text dan textarea*/
+	.inputfield{box-sizing:border-box; width:100%; padding:5px 10px;  border:1px solid #ccc; margin-bottom:10px;}
+	input[type="text"].inputfield, select.inputfield {height:30px; line-height:30px;}
+	textarea.inputfield{font-family:inherit; font-size:inherit;}
+
+/*login dan signup*/
+.content.loginsignup , .content.transdetail{padding:40px 0 80px;}
+.loginsignup .loginbox , .transdetail .registerdetail ,  .transdetail .addressdetail {background-color:#f2f2f2; padding:40px;}
+.loginbox .title , .signupbox .title , .registerdetail .title , .transbox .title , .paymentbox .title{font-size:18px; padding-bottom:15px;}
+
+.userform .form_row{padding-top:10px;}
+	.userform label{display:inline-block; padding-bottom:5px;}
+	.userform .form_row label.big{display:inline-block;font-size:14px;}
+
+	.userform .forgetpass{font-style:italic; font-weight:normal;}
+	.userform .kanan , .userform .kiri{width:50%; box-sizing:border-box;}
+	.userform .kanan{padding-left:5px;} .userform .kiri{padding-right:5px;}
+	.userform .submit.btn , .signupbox .register.btn  , .registersubmit.btn {width:100%;}
+	.registersubmit.btn{margin-top:10px;}
+
+.loginbox .keeplogin , .signupbox .desc{padding-top:10px; font-size:12px; font-weight:400;}
+
+.loginsignup .signupbox {padding:40px 80px; text-align:center;}
+.signupbox .row.top{ border-bottom:1px solid #000; padding:0 25px 25px; margin-bottom:25px;}
+.signupbox .ico{ margin:10px;}
+
+.changeaddress_option{background-color:#e6e7e9; padding:5px 40px 15px;}
+
+.transbox{margin-left:40px; border:1px solid #333; padding:20px;}
+.transbox .totalprice {color:#1d4a23; font-weight:bold; font-size:15px;}
+.transbox.shippingaddress{margin-bottom:20px; font-weight:400;}
+
+/*success page*/
+.content.successPage{padding:50px 0; text-align:center;}
+.successPage .success-banner{border-bottom:2px dashed #000; max-width: 500px;}
+.successPage .orderDesc{padding:50px 0;}
+.successPage .orderDesc .box{display:inline-block; background-color:#204823; margin-top:5px; font-weight:700; color:#fff; padding:10px 20px; font-size:20px; letter-spacing:.2em;}
+
+.transtable th , .transtable td{padding:5px 10px; vertical-align:middle;}
+.transtable th{font-weight:bold; border-top:1px solid #333; border-bottom:1px solid #333;}
+.transtable tr.bb td , .transtable tr.bb th{border-bottom:1px solid #333;}
+.transtable .tc{text-align:center;}
+.transtable .tr{text-align:right;}
+
+.payment-tab:after {content:"";display:table;clear:both; padding-bottom:5px;}
+.payment-tab li{float:left; box-sizing:border-box; width:20%; padding-right:5px; }
+.payment-tab li:nth-child(5n){padding:0;}
+.payment-tab li > a{display:block; background-color:#ebebeb; padding:10px 0; text-align:center; font-size:.65em;}
+	.payment-tab li > a.tab-on , .payment-tab li > a:hover{background-color:#888;}
+
+.payment-tab li > a .ico{display:block; margin:0 auto;}
+
+.paymentform{background-color:#f2f2f2; padding:20px;}
+.paymentform label{font-size:.9em;font-weight:400;}
+.paymentform .paymentsubmit.btn{padding:0 30px; margin-top:20px;}
+
+.tabsystem .display-list{display:none;}

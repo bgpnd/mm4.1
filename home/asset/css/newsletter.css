@@ -1,0 +1,82 @@
+/**
+ * Popup
+ */
+
+.newsletter-popup,
+.help-popup,
+.event-popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 991;
+}
+.newsletter-popup-bg,
+.help-popup-bg,
+.event-popup-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 991;
+    background-color: #000000;
+    opacity: .2;
+    zoom: 1;
+    filter: alpha(opacity=20);
+}
+.newsletter-popup-content {
+    width: 425px;
+    height: 425px;
+    position: absolute;
+    z-index: 992;
+    top: 50%;
+    left: 50%;
+    margin-top: -212.5px;
+    margin-left: -212.5px;
+    background: transparent url('../images/popup/newsletter.jpg') no-repeat center center;
+}
+.newsletter-popup-remove {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    z-index: 993;
+    top: 12px;
+    right: 12px;
+}
+.newsletter-popup-form {
+    margin: 355px auto 0 auto;
+    width: 325px;
+}
+.newsletter-popup-form input {
+    width: 190px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    margin-right: 2px;
+}
+.newsletter-popup-form button {
+    height: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    float: left;
+    color: #fff;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+.newsletter-popup-form button.btn-man {
+    background-color: #58585a;
+    border: none;
+    width: 53px;
+}
+.newsletter-popup-form button.btn-woman {
+    background-color: #332e32;
+    border: none;
+    width: 78px;
+    margin-right: 0px;
+}
+.newsletter-popup-form .message {
+    color: #bb0000;
+    display: block;
+    margin: 2px 0 0 0;
+}
