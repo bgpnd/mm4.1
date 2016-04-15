@@ -536,6 +536,7 @@
     }
     .headline{ 
         width: 100%;
+        padding-right: 0;
     }
     .floor .wrapper{
         width: 100%;
@@ -577,6 +578,7 @@
     }
     .headline{ 
         width: 710px;
+        padding-right: 17px;
     }
     .floor .wrapper{
         width: 870px;
