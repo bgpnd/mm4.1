@@ -1,3 +1,17 @@
+
+@font-face {
+  font-family: ProximaNova-Black;
+  src: url(../fonts/ProximaNova-Black.otf);
+}
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url(../fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/ProximaNovaCond-Regular.otf);
+}
+
 body{
 	background: #e6e7e8;
 }
@@ -73,4 +87,97 @@ body{
 }
 .seller-mozaik{
 	margin-top: 0 !important;
+}
+.page-0 h1{
+	margin: 0;
+	color: #fff;
+	position: absolute;
+	z-index: 5;
+	top: 110px;
+	font-size: 44px;
+	padding: 0 78px;
+	text-align: center;
+}
+.border-top{
+	border-top: 5px solid #fff;
+	z-index: 6;
+	position: absolute;
+	top: 250px;
+}
+.page-1 h2{
+	color: #fff;
+	font-size: 25px;
+	top: 100px;
+	text-align: right;
+	font-family: ProximaNova-Bold;
+}
+.page-1 p{
+	color: #fff;
+	font-family: ProximaNova;
+	font-size: 18px;
+	top:100px;
+	text-align: right;
+	margin: 0;
+}
+.page-2 h2{
+	color: #fff;
+	font-size: 25px;
+	top: 165px;
+	font-family: ProximaNova-Bold;
+}
+.page-2 p{
+	color: #fff;
+	font-family: ProximaNova;
+	font-size: 18px;
+	top:165px;
+	margin: 0;
+}
+.page-3 h2{
+	color: #fff;
+	font-size: 25px;
+	top: 100px;
+	text-align: right;
+	font-family: ProximaNova-Bold;
+}
+.page-3 p{
+	color: #fff;
+	font-family: ProximaNova;
+	font-size: 18px;
+	top:100px;
+	text-align: right;
+	margin: 0;
+}
+.nopad{
+	padding: 0;
+}
+.page-4 h2{
+	color: #817d31;
+	top: 100px;
+	text-align: center;
+	font-size: 40px;
+	font-family: ProximaNova-Black;
+}
+.page-4 h1{
+	color: #000;
+	top: 100px;
+	text-align: center;
+	font-size: 41px;
+	font-family: ProximaNova-Black;
+}
+.page-4 p{
+	color: #000;
+	top: 100px;
+	font-size: 18px;
+	text-align: center;
+	font-family: ProximaNova;
+}
+.page-4 h3{
+	color: #fff;
+	background: #ff4200;
+	top: 100px;
+	text-align: center;
+	font-size: 30px;
+	padding: 5px 10px;
+	margin: 0 75px;
+	font-family: ProximaNova-Bold;
 }
