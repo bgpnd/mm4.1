@@ -544,6 +544,19 @@
     .floor-header .floor-nomer {
         font-size:1em;
     }
+    .floor-header .floor-name, .instag-muslimm h1 { 
+        width:52%; 
+        font-size:14px;
+    }
+    .box-banner{
+        width: 100%;
+    }
+    .floor-promo-box .box-thumb-box{
+        width: 100%;
+    }
+    .floor-promo-box .box-thumb{
+        width: 50%;
+    }
 }
 @media (min-width:768px){
     .small-banner div:nth-child(1){
@@ -586,6 +599,16 @@
     .floor-header .floor-nomer {
         font-size:1.4em;
     }
+    .floor-header .floor-name, .instag-muslimm h1 { 
+        width:70%; 
+        font-size:20px;
+    }
+    .box-banner{
+        width: 330px;
+    }
+    .floor-promo-box .box-thumb-box{
+        width: 180px;
+    }
 }
 @media (min-width: 992px) {
     .slide-image .carousel-indicators li{
@@ -608,4 +631,8 @@
 }
 .col-20 img{
     width: 100%;
+}
+.frameinsta{
+    width: 100%;
+    height: 120px;
 }

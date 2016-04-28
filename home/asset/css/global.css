@@ -202,10 +202,10 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 		.floor-headerx::after { right:10px; left:auto; -webkit-transform:skew(8deg) rotate(3deg); -moz-transform:skew(8deg) rotate(3deg); -ms-transform:skew(8deg) rotate(3deg); -o-transform:skew(8deg) rotate(3deg); transform:skew(8deg) rotate(3deg); }
 
 		.floor-header:after {content:""; position:absolute; right:0; top:-20px; width: 0;height: 0; border-style: solid; border-width: 20px 0 0 35px; border-color: #eff3f3 #eff3f3 #eff3f3 rgba(0,0,0,.15); background:#3097d2; box-sizing:border-box; }
-			.floor-header .floor-nomer { width:15%; font-weight: 300; }
+			.floor-header .floor-nomer {font-weight: 300; }
 				.floor-header .floor-nomer strong {font-size:1.4em; display:inline-block; margin-left:10px;}
-			.floor-header .floor-name, .instag-muslimm h1 { width:60%; font-size:20px; text-transform:uppercase; letter-spacing: .2em; width:70%; text-align: center;}
-			.floor-header .floor-stair {width:13%; text-align: right;}
+			.floor-header .floor-name, .instag-muslimm h1 { text-transform:uppercase; letter-spacing: .2em; text-align: center;}
+			.floor-header .floor-stair {text-align: right;}
 		.floor-box .floor-promo-box { padding:5px 0; }
 
 	.floor1 .floor-header, .floor1 .floor-header::after, .floor1 .floor-promo-box, .floor1 .ico.floor-icon {background-color:#3097d2;}
@@ -216,8 +216,8 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 
 	.floor-box .floor-promo-box > div {background:#eff3f4; height:100%; overflow: hidden; }
 		.floor-promo-box .box-banner, .floor-promo-box .box-thumb, .floor-promo-box .box-thumb-box {float:left;}
-		.floor-promo-box .box-banner {height:100%; width: 330px; }
-		.floor-promo-box .box-thumb {height:50%; width: 179px; margin:0 1px 1px 0; background:#ebebeb;}
+		.floor-promo-box .box-banner {height:100%;}
+		.floor-promo-box .box-thumb {height:50%; background:#ebebeb;}
 			.floor-promo-box .box-thumb-box {height:100%; width:180px;}
 			.floor-promo-box .box-thumb::after {content:""; width:1px; height:97%; background:#CCC; position: absolute; right:-1px; top:0; bottom:0; margin:auto; }
 			.floor-promo-box .box-thumb::before {content:""; width:96%; height:1px; background:#CCC; position: absolute; right:0; left:0; bottom:0; margin:auto; }
