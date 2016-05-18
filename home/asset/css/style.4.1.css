@@ -9,7 +9,7 @@
 /**
  * Re-styles
  */
- .text-middle {
+.text-middle {
     vertical-align: middle !important;
 }
 .modal.in .modal-dialog {
@@ -115,7 +115,7 @@
 /**
  * HEADER STICKY
  */
- .header-sticky {
+.header-sticky {
     position: fixed;
     top: -50px;
     width: 100%;
@@ -253,7 +253,7 @@
  * MAIN CATEGORY
  */
 
- .tab-content > .tab-pane {
+.tab-content > .tab-pane {
     display: none;
 }
 .tab-content > .active {
@@ -443,7 +443,7 @@
  * Product Recommended
  */
 
- .product-slide {
+.product-slide {
     padding: 0 28px;
     position: relative;
 }
@@ -481,7 +481,7 @@
 /**
  * Icon Payment
  */
- .ico-payment {
+.ico-payment {
     display: block;
     background: transparent url(../images/sprite-payment.png) no-repeat;
     height: 25px;
@@ -557,8 +557,87 @@
     .floor-promo-box .box-thumb{
         width: 50%;
     }
+    .listing ul.grid > li{
+        width:49%;
+    }
+    .w-26{
+        width: 100%;
+    }
+    .w-73{
+        width: 100%;
+    }
+    .gratis-ongkir{
+        float: left;
+    }
+    .subdetail .foto-thumb {
+        width:100%; 
+    }
+    .foto-thumb ul li a img{
+        width: 100%;
+    }
+    .foto-thumb ul li{
+        width: 48%;
+    }
+    .carousel-detail .carousel-indicators{
+        width: 100%
+    }
+    .carousel-detail .carousel-inner {
+        width: 100%;
+        height: 576px;
+    }
+    .detail-info{
+        width: 90%;
+        margin: 0 20px;
+    }
+    .detail-seller{
+        width: 90%;
+        margin: 0 20px;
+    }
+    .subket-detail{
+        width: 90%;
+        margin: 0 20px;
+    }
+}
+@media (min-width:415px){
+    .carousel-detail .carousel-indicators{
+        width: 70px;
+    }
+    .carousel-detail .carousel-inner {
+        width: 310px;
+        height: 465px;
+    }
+    .detail-info {
+        width:250px; 
+        margin: 0 0;
+    }
+    .detail-seller {
+        width:0; 
+        margin: 0 0;
+    }
+    .subket-detail {
+        width:0; 
+        margin: 0 0;
+    }
+
+}
+@media (min-width:679px){
+    .foto-thumb ul li a img{
+        width: 100%;
+    }
+    .foto-thumb ul li{
+        width: 15.8%;
+    }
 }
 @media (min-width:768px){
+    .foto-thumb ul li a img{
+        width: 100%;
+    }
+    .foto-thumb ul li{
+        width: 70px;
+    }
+    .listing ul.grid > li{
+        width:32.5%;
+    }
     .small-banner div:nth-child(1){
         padding-right: 9.5px;
     }
@@ -609,6 +688,18 @@
     .floor-promo-box .box-thumb-box{
         width: 180px;
     }
+    .floor-promo-box .box-thumb{
+        width: 100%;
+    }
+    .w-26{
+        width: 26%;
+    }
+    .w-70{
+        width: 70%;
+    }
+    .subdetail .foto-thumb {
+        width:150px; 
+    }
 }
 @media (min-width: 992px) {
     .slide-image .carousel-indicators li{
@@ -616,6 +707,9 @@
     }
     .promo-banner .imagebox {
         height:360px;
+    }
+    .gratis-ongkir{
+        float: right;
     }
 }
 @media (min-width: 1200px) {
@@ -635,4 +729,7 @@
 .frameinsta{
     width: 100%;
     height: 120px;
+}
+.banner_feedback img{
+    margin: 0 auto;
 }

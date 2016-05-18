@@ -23,9 +23,9 @@ input[type="submit"], button[type="submit"] {cursor:pointer;}
 	.logo {opacity:0;}
 .transdetail {opacity:.2;}*/
 
-.col-265 {float:left; width:265px; box-sizing:border-box;}
-.col-735 {float:left; width:735px; box-sizing:border-box;}
-.col-440 {float:left; width:440px; box-sizing:border-box;}
+.col-265 {float:left; box-sizing:border-box;}
+.col-735 {float:left; box-sizing:border-box;}
+.col-440 {float:left; box-sizing:border-box;}
 .col-450 {float:left; width:450px; box-sizing:border-box;}
 .col-300{width:300px; float:left; box-sizing:border-box;}
 .col-200{width:200px; float:left; box-sizing:border-box;}
@@ -233,7 +233,7 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 				.box-thumb-box.box-thumb-hor .box-thumb::after {display:none; }
 
 /*LISTING*/
-	.kategori-filter {width:255px; padding:0; box-sizing:border-box; background:#F6F6F6; text-transform: uppercase; }
+	.kategori-filter {padding:0; box-sizing:border-box; background:#F6F6F6; text-transform: uppercase; }
 		.kategori-filter > li {border-bottom:1px solid #333; padding:10px 5px 10px 20px;}
 			.kategori-filter > li:last-of-type {border-bottom:0px;}
 			.kategori-filter > li > ul { max-height:111px; overflow: auto; margin-bottom:5px; }
@@ -253,7 +253,7 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 			.listing-tool .kiri.jml-produk {width:300px;}
 			.listing-tool .paging a {display:inline-block; padding:1px 6px; border:1px solid #333; }
 				.listing-tool .paging a.onpage, .listing-tool .paging a:hover {background:#333; color:#FFF;}
-		.listing ul.grid > li {display:block; float:left; width:32.5%; margin-right:1%; box-sizing:border-box; margin-top:10px; padding:5px; box-shadow:0 0 0 3px rgba(0,0,0,0); transition:.3s;}
+		.listing ul.grid > li {display:block; float:left; margin-right:1%; box-sizing:border-box; margin-top:10px; padding:5px; box-shadow:0 0 0 3px rgba(0,0,0,0); transition:.3s;}
 			.listing ul.grid > li:nth-child(3n) {margin-right:0;} 
 			.listing ul.grid > li .photobox {width:100%; height:343px; background:#FFF;}
 				.listing ul.grid > li .photobox:before {content:"NO IMAGE AVAILABLE"; position:absolute; width:100px; text-align:center; height:40px; left:0; right:0; top:0; bottom:0; margin:auto; color:#CCC; padding:5px; border:3px solid #EEE; }
@@ -312,7 +312,6 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 		.foto-thumb > ul > li.tab-on {box-shadow:0 0 0 1px rgba(0,0,0,.6); opacity:.4; cursor:auto;}
 .foto-big {width:310px; height:465px; margin-right:10px; background:#F6F6F6; }
 	.foto-big img {max-width:100%; max-height:100%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; }
-.detail-info {width:250px; }
 	.detail-info h1 {font-weight:400; margin-bottom:5px; text-transform:uppercase;}
 	.detail-info h2 {font-weight:300;text-transform:uppercase; font-size:1.2em;}
 	.detail-info hr {border:1px solid #AAA; margin:10px 0; background:#DDD;text-transform:uppercase; }
@@ -370,10 +369,10 @@ input[type=button].red, .button.red {background:red; color:#FFF; padding:5px 10p
 	}
 
 .subdetail .col-735 > div, .subdetail .col-265 > div {border-top:2px solid #666; padding:20px 0;}
-	.subdetail .col-735 {width:715px; margin-right:20px;}
+	.subdetail .col-735 { margin-right:20px;}
 	.subdetail .col-265 center {}
-	.subdetail .foto-thumb {width:150px; margin:30px auto; }
-		.subdetail .foto-thumb li {display:inline-block; width:70px; margin-right:5px; }
+	.subdetail .foto-thumb {margin:30px auto; }
+		.subdetail .foto-thumb li {display:inline-block; margin-right:5px; }
 		.subdetail .foto-thumb li:nth-child(2n) {margin-right:0; }
 
 /*SLIDE*/

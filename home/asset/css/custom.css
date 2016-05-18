@@ -524,8 +524,6 @@
 }
 
 .carousel-detail .carousel-inner {
-    width: 310px;
-    height: 465px;
     margin-right: 10px;
     background: #F6F6F6;
 }
@@ -538,7 +536,6 @@
     bottom: auto !important;
     left: auto;
     z-index: 1;
-    width: 70px;
     margin-right: 20px;
     margin-left: 0;
     padding-left: 0;

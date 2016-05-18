@@ -306,3 +306,22 @@ $(function(){
 });
 
 //$('.default-slider').unslider();
+var image = $('#primaryImage');
+var zoomConfig = {};
+var zoomActive = false;
+
+image.on('click', function(){
+
+    zoomActive = !zoomActive;
+
+    if(zoomActive)
+    {
+         image.elevateZoom(zoomConfig);//initialise zoom
+    }
+    else
+    {
+        $.removeData(image, 'elevateZoom');//remove zoom instance from image
+
+        $('.zoomContainer').remove();// remove zoom container from DOM
+    }
+});
