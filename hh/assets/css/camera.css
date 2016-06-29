@@ -292,7 +292,7 @@
 	left: 0;
 }
 .camera_prev > span {
-    background: url(../images/camera_skins.png) no-repeat 0 0;
+    background: url(../img/camera_skins.png) no-repeat 0 0;
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -301,7 +301,7 @@
 	right: 0;
 }
 .camera_next > span {
-    background: url(../images/camera_skins.png) no-repeat -40px 0;
+    background: url(../img/camera_skins.png) no-repeat -40px 0;
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -310,12 +310,12 @@
 	right: 41px;
 }
 .camera_commands > .camera_play {
-	background: url(../images/camera_skins.png) no-repeat -80px 0;
+	background: url(../img/camera_skins.png) no-repeat -80px 0;
 	height: 40px;
 	width: 40px;
 }
 .camera_commands > .camera_stop {
-	background: url(../images/camera_skins.png) no-repeat -120px 0;
+	background: url(../img/camera_skins.png) no-repeat -120px 0;
 	display: block;
 	height: 40px;
 	width: 40px;

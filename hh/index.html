@@ -6,9 +6,11 @@
 	<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
 	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet/less" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet/less" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet/less" type="text/css" href="assets/css/camera.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/cs.style.css">
 	<link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
 </head>
 <body>
 	<!--top-->
@@ -46,7 +48,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row top-menu">
+		<div class="row">
 			<div class="col-md-4">
 				<img src="assets/img/logo.png">
 			</div>
@@ -62,7 +64,7 @@
 							</button>
 						</div>
 						<div class="navbar-collapse collapse">
-							<ul class="nav navbar-nav">
+							<ul class="nav navbar-nav top-menu">
 								<li>
 									<a href="#">Home</a>
 								</li>
@@ -102,57 +104,458 @@
 				</nav>
 			</div>
 			<div class="col-md-5">
-				<form>
+				<form class="search-cart">
 					<button type="submit" class="search-submit"><i class="fa fa-search fa-flip-horizontal"></i></button>
 					<input type="text" class="form-control search-form" placeholder="Search">
 				</form>
+				<div class="dropdown cart">
+					<a href="#" class="dropdown-toggle dropdown-link btn btn-pink" data-hover="dropdown">
+						<i class="fa fa-shopping-cart"></i> 2 items - 
+						<span class="money"><i class="fa fa-eur"></i>55.00</span>
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<div class="dropdown-menu">
+						<div class="cart-heading">
+							<a href="#">My Cart</a>
+						</div>
+						<div class="row cart-total">
+							<div class="col-md-10 cart-sub">
+								Cart Subtotal
+								<span class="money"><i class="fa fa-eur"></i>55.00</span>
+							</div>
+							<div class="col-md-10">
+								<button class="btn">Checkout</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="camera_wrap">
+		<div data-src="assets/img/slide-image-1.jpg">
+			<div class="slide1">
+				<div class="camera_content">Etiam lobor dictuve </div>
+				<div class="camera_content">sale <span>50%</span> off</div>
+			</div>
+		</div>
+		<div data-src="assets/img/slide-image-2.jpg">
+			<div class="camera_content">Etiam lobor dictuve </div>
+			<div class="camera_content">sale <span>50%</span> off</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-15">
+				<div class="head-title clearfix">
+					<span>featured products</span>
+				</div>
+				<div class="row-container clearfix home-product">
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/2-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/3-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/4-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/5-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/6-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="head-title clearfix">
+					<span>staff pick</span>
+				</div>
+				<div class="customNavigation">
+					<a class="btn prev"><i class="fa fa-chevron-left"></i></a>
+					<a class="btn next"><i class="fa fa-chevron-right"></i></a>
+				</div>
+				<div class="owl-carousel">
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="head-title clearfix">
+					<span>featured categories</span>
+				</div>
+				<div class="customNavigation">
+					<a class="btn prev">fa fa-chevron-left</a>
+					<a class="btn next">fa fa-chevron-right</a>
+				</div>
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+					<div class="product-owl">
+						<div>
+							<a href="#">
+								<span>
+									<img src="assets/img/7-back.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+								</span>
+							</a>
+							<a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+							<span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="banner">
+					<img src="assets/img/banner-1.jpg" class="bnwimg">
+				</div>
+				<div class="banner">
+					<img src="assets/img/banner-2.jpg" class="bnwimg">
+				</div>
+				<div class="banner">
+					<img src="assets/img/banner-3.jpg" class="bnwimg">
+				</div>
+				<div class="banner">
+					<img src="assets/img/banner-4.jpg" class="bnwimg">
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="camera_wrap">
-				<div data-src="assets/img/slide-image-1.jpg">
-					<div class="camera_caption">The text of your caption</div>
+			<div class="col-sm-10">
+				<div class="bottom-block">
+					<div class="block-logo">
+						<img src="assets/img/bottom_logo_1.png">
+					</div>
+					<div class="block-content">
+						<div class="block-heading">
+							Free Shipping on orders over $100
+						</div>
+						<p class="block-caption">Nam eu dui elementum felis dictum cursus done convallis tristique rutrum vitae</p>
+					</div>
 				</div>
-				<div data-src="assets/img/slide-image-2.jpg">
-					<div class="fadeIn camera_effected">The text of your html element</div>
+			</div>
+			<div class="col-sm-10">
+				<div class="bottom-block">
+					<div class="block-logo">
+						<img src="assets/img/bottom_logo_2.png">
+					</div>
+					<div class="block-content">
+						<div class="block-heading">
+							Call us tall free 1800 - 800 - Fabriluer
+						</div>
+						<p class="block-caption">Nam eu dui elementum felis dictum cursus done convallis tristique rutrum vitae</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--<div class="container">
-		<div class="row">
-			<div class="product">
-				<ul class="row-container list-unstyled clearfix">
-					<li>
-						<a href="./product.html" class="hoverBorder container_item">
-							<span class="hoverBorderWrapper">
-								<img src="assets/img/1_back.jpg" class="image-fly img-responsive front" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
-								<span class="hidden-sm hidden-xs">
-									<img src="assets/img/1_front.jpg" class="rotation back img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
-								</span>
-							</span>
-						</a>
-					</li>
-				</ul>
+	</div>	
+	<footer id="footer">
+		<div class="container">
+			<div class="row widget-footer">
+				<div class="col-sm-5 widgetlist1">
+					<div class="fadeInLeft animated">
+						<h3>menu</h3>
+						<ul class="list-unstyled list-styled">
+							<li>
+								<a href="#">Homepage</a>
+							</li>
+							<li>
+								<a href="#">Featured items</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Shipping information</a>
+							</li>
+							<li>
+								<a href="#">Search</a>
+							</li>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#">Catalog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-5 widgetlist2">
+					<div class="fadeInUp animated">
+						<h3>from twitter</h3>
+					</div>
+				</div>
+				<div class="col-sm-5 widgetlist1">
+					<div class="fadeInUp animated">
+						<h3>information</h3>
+						<ul class="list-unstyled list-styled">
+							<li>
+								<a href="#">Orem ipsum quis</a>
+							</li>
+							<li>
+								<a href="#">Consecte adipiscing</a>
+							</li>
+							<li>
+								<a href="#">Cras tincidunt ante</a>
+							</li>
+							<li>
+								<a href="#">Nunc ultricies ipsum</a>
+							</li>
+							<li>
+								<a href="#">Vestibulum mollis</a>
+							</li>
+							<li>
+								<a href="#">Cras tincidunt ante</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-5 about-us">
+					<div class="fadeInRight animated">
+						<div>
+							<h3>about us</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel posuere metus. Donec tempus adipiscing purus in congue. Nulla facilisi. Aliquam erat volutpat</p>
+						</div>
+						<div class="connect-with-us">
+							<h3>connect with us</h3>
+							<ul class="list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-vimeo-square"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="row foot">
+				<div class="col-sm-15">
+					<ul class="list-unstyled list-inline">
+						<li>
+							<a href="#" title="Fusce Uttest">Fusce Uttest </a>
+						</li>
+						<li>
+							<span>|</span>
+							<a href="#" title="Diam Tempor">Diam Tempor </a>
+						</li>
+						<li>
+							<span>|</span>
+							<a href="#" title="Justo Malesuada">Justo Malesuada </a>
+						</li>
+						<li>
+							<span>|</span>
+							<a href="#" title="Volutpat">Volutpat </a>
+						</li>
+						<li>
+							<span>|</span>
+							<a href="#" title="Aliquam Auctor">Aliquam Auctor </a>
+						</li>
+						<li>
+							<span>|</span>
+							<a href="#" title="Elit Quis">Elit Quis</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						© 2014 
+						<a href="#"> HTML Fashion Theme</a>
+						. All Rights Reserved.
+						<p>Designed by <a href="#">Ganezha</a></p>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<ul class="list-inline pull-right">
+						<li>
+							<a href="#" class="icons visa"></a>
+						</li>
+						<li>
+							<a href="#" class="icons mastercard"></a>
+						</li>
+						<li>
+							<a href="#" class="icons amex"></a>
+						</li>
+						<li>
+							<a href="#" class="icons paypal"></a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<img src="assets/img/logo.png" class="bnwimg">-->
-
-<script src="assets/js/jquery-1.9.1.min.js"></script>
-<script src="assets/js/less.min.js"></script>
-<script src="assets/js/bootstrap-hover-dropdown.js"></script>
-<script src="assets/js/jquery.easing.1.3.js"></script>
-<script src="assets/js/camera.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.js"></script>
+	</footer>
+	<script src="assets/js/jquery-1.9.1.min.js"></script>
+	<script src="assets/js/owl.carousel.js"></script>
+	<script src="assets/js/less.min.js"></script>
+	<script src="assets/js/bootstrap-hover-dropdown.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/camera.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.js"></script>
 	<script>
 jQuery('.camera_wrap').camera({ //here I declared some settings, the height and the presence of the thumbnails 
 	height: '41%',
 	pagination: false,
 	thumbnails: true
 });
+$('.owl-carousel').owlCarousel({
+	margin:10,
+	responsive:{
+		0:{
+			items:3
+		},
+		783:{
+			items:4
+		},
+		1215:{
+			items:3
+		}
+	}
+})
+
+owl = $(".owl-carousel").data('owlCarousel')
+  // Custom Navigation Events
+  $(".next").click(function(){
+  	owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+  	owl.trigger('owl.prev');
+  });
 </script>
 </body>
 </html>
