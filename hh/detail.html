@@ -143,16 +143,17 @@
         <div class="row">
             <div class="col-md-15">
                 <div class="row-container" style="overflow: hidden;">
-                    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                    <source src="https://www.youtube.com/watch?v=2i2khp_npdE" type='video/mp4'>
-                        <source src="https://www.youtube.com/watch?v=2i2khp_npdE" type='video/webm'>
-                            <p class="vjs-no-js">
-                              To view this video please enable JavaScript, and consider upgrading to a web browser that
-                              <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                          </p>
-                      </video>
-                      <section class="image-bottom-video">
+                    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{ 
+                        "techOrder": ["youtube", "html5"], 
+                        "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=2i2khp_npdE"}]
+                        }'>
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                    
+                    <section class="image-bottom-video">
                         <div>
                           <a class="example-image-link" href="assets/img/2-back.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                               <img class="example-image" src="assets/img/2-back.jpg" alt=""/>
@@ -327,6 +328,7 @@
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/videojs-ie8.min.js"></script>
 <script src="assets/js/video.js"></script>
+<script src="assets/js/Youtube.js"></script>
 <script src="assets/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
 <script src="assets/js/less.min.js"></script>
 <script src="assets/js/bootstrap-hover-dropdown.js"></script>
