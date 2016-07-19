@@ -368,21 +368,21 @@
 
 
 
-        <script type="text/javascript">
-  // Once the video is ready
-  $("#content_video").ready(function(){
+<script type="text/javascript">
+// Once the video is ready
+$("#content_video").ready(function(){
 
-    var myPlayer = $(this);
-    var aspectRatio = 9/16;
+var myPlayer = $(this);
+var aspectRatio = 9/16;
 
-    function resizeVideoJS(){
-      var width = document.getElementById("content_video").parentElement.offsetWidth;
-      myPlayer.width(width).height( width * aspectRatio );
-    }
+function resizeVideoJS(){
+var width = document.getElementById("content_video").parentElement.offsetWidth;
+myPlayer.width(width).height( width * aspectRatio );
+}
 
-    resizeVideoJS();
-    window.onresize = resizeVideoJS;
-  });
+resizeVideoJS();
+window.onresize = resizeVideoJS;
+});
 </script>
 
 </body>
