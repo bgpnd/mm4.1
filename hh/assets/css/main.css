@@ -115,7 +115,11 @@ a.paypal {
 .customNavigation{
 	text-align: center;
 }
-.vjs-big-play-button {	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	border-radius: 0.3em !important;
+.video-js{
+	width: 100%;
+}
+@media (min-width: 1px) {
+	.my-video-dimensions{
+		height: 487px;
+	}
 }
