@@ -308,8 +308,7 @@ body.vjs-full-window {
 
 .video-js.vjs-fullscreen {
   width: 100% !important;
-  height: 100% !important;
-  padding-top: 0 !important; }
+  height: 100% !important; }
 
 .video-js.vjs-fullscreen.vjs-user-inactive {
   cursor: none; }

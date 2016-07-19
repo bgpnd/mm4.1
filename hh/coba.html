@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/css/video-js.css">
+    
+    <style type="text/css">
+        .video-js {padding-top: 56.25%}
+        .vjs-fullscreen {padding-top: 100 !important}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="videocontent">
+                <!-- <video id="myvideo" class="video-js vjs-default-skin" controls
+                preload="auto" width="auto" height="auto" poster="my_video_poster.png"
+                data-setup="{}">
+                <source src="http://www.youtube.com/watch?v=2i2khp_npdE" type='video/mp4'>
+                </video> -->
+                <video id="my-video" class="video-js vjs-default-skin vjs-fullscreen" controls preload="auto" width="auto" height="auto" poster="my_video_poster.png"
+                data-setup='{ 
+                "techOrder": ["youtube", "html5"], 
+                "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=2i2khp_npdE"}]
+            }'>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+</div>
+<h1>hahaha</h1>
+</body>
+<script src="assets/js/videojs-ie8.min.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/Youtube.js"></script>
+</html>

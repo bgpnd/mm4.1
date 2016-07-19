@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/cs.style.css">
     <link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <style type="text/css">
+        .video-js {padding-top: 56.25%}
+        .vjs-fullscreen {padding-top: 100 !important}
+    </style>
 </head>
 <body>
     <!--top-->
@@ -140,42 +144,56 @@
         </div>
     </div>
     <div class="container">
+        <!-- <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <i class="fa fa-angle-right"></i>
+                <li><a href="#">Accum etiam lobortis purus</a></li>
+                <i class="fa fa-angle-right"></i>
+                <li class="active">Bellentes sagittis sodales accum etiam lobortis purus dictum</li>
+            </ol>
+        </div> -->
         <div class="row">
             <div class="col-md-15">
                 <div class="row-container" style="overflow: hidden;">
-                    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{ 
-                        "techOrder": ["youtube", "html5"], 
-                        "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=2i2khp_npdE"}]
+                    <div class="wrapper">
+                        <div class="videocontent">
+                            <video id="my-video" class="video-js vjs-default-skin vjs-fullscreen" controls preload="auto" width="auto" height="auto" poster="my_video_poster.png"
+                            data-setup='{ 
+                            "techOrder": ["youtube", "html5"], 
+                            "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=2i2khp_npdE"}]
                         }'>
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and consider upgrading to a web browser that
                             <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                         </p>
                     </video>
-                    
-                    <section class="image-bottom-video">
-                        <div>
-                          <a class="example-image-link" href="assets/img/2-back.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                              <img class="example-image" src="assets/img/2-back.jpg" alt=""/>
-                          </a>
-                          <a class="example-image-link" href="assets/img/3-back.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-                              <img class="example-image" src="assets/img/3-back.jpg" alt="" />
-                          </a>
-                          <a class="example-image-link" href="assets/img/4-back.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-                              <img class="example-image" src="assets/img/4-back.jpg" alt="" />
-                          </a>
-                          <a class="example-image-link" href="assets/img/5-back.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-                              <img class="example-image" src="assets/img/5-back.jpg" alt="" />
-                          </a>
-                      </div>
-                  </section>
+                </div>
+            </div>
+            <section class="image-bottom-video">
+                <div>
+                  <a class="example-image-link" href="assets/img/2-back.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                      <img class="example-image" src="assets/img/2-back.jpg" alt=""/>
+                  </a>
+                  <a class="example-image-link" href="assets/img/3-back.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
+                      <img class="example-image" src="assets/img/3-back.jpg" alt="" />
+                  </a>
+                  <a class="example-image-link" href="assets/img/4-back.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
+                      <img class="example-image" src="assets/img/4-back.jpg" alt="" />
+                  </a>
+                  <a class="example-image-link" href="assets/img/5-back.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
+                      <img class="example-image" src="assets/img/5-back.jpg" alt="" />
+                  </a>
               </div>
-          </div>
-          <div class="col-md-5">
-          </div>
+          </section>
       </div>
   </div>
-  <footer id="footer">
+  <div class="col-md-5">
+  </div>
+</div>
+</div>
+</div>
+<footer id="footer">
     <div class="container">
         <div class="row widget-footer">
             <div class="col-sm-5 widgetlist1">
