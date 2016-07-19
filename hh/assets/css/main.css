@@ -115,11 +115,3 @@ a.paypal {
 .customNavigation{
 	text-align: center;
 }
-.video-js{
-	width: 100%;
-}
-@media (min-width: 1px) {
-	.my-video-dimensions{
-		height: 487px;
-	}
-}
