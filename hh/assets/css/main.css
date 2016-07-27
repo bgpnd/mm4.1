@@ -1,5 +1,5 @@
 @font-face {
-	font-family: BebasNeue;
+	font-family: Open Sans;
 	src: url(../fonts/OpenSans-Regular.ttf);
 }
 html, body, p {
@@ -114,4 +114,26 @@ a.paypal {
 }
 .customNavigation{
 	text-align: center;
+}
+.video-js{
+	width: 100%;
+}
+.videocontent{
+	padding-top: 20px;
+}
+h1, h2, h3, h4, h5, h6, {
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 1.1;
+    color: inherit;
+}
+h5{
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+.nopadright{
+	padding-right: 0;
+}
+.nopadleft{
+	padding-left: 0;
 }
