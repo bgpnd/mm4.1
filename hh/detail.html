@@ -266,27 +266,77 @@
             </ol>
             <p>Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor auctor eget vitae arcu. Nam tempor malesuada porttitor. Nulla quis dignissim ipsum. Aliquam pulvinar iaculis justo, sit amet interdum sem hendrerit vitae. Vivamus vel erat tortor. Nulla facilisi. In nulla quam, lacinia eu aliquam ac, aliquam in nisl.</p>
         </div>
-        <div id="slide-featured" class="owl-carousel">
-            <div class="product-owl">
-                <div>
-                    <a href="#">
-                        <span>
-                            <img src="assets/img/7-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
-                        </span>
-                    </a>
-                    <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
-                    <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+        <div class="customNavigation">
+            <a class="btn prev" id="slide-featured-prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn next" id="slide-featured-next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <div class="row-container" style="overflow: hidden;">
+            <div id="slide-featured" class="owl-carousel">
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/1-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
                 </div>
-            </div>
-            <div class="product-owl">
-                <div>
-                    <a href="#">
-                        <span>
-                            <img src="assets/img/6-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
-                        </span>
-                    </a>
-                    <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
-                    <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/2-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
+                </div>
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/3-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
+                </div>
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/4-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
+                </div>
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/5-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
+                </div>
+                <div class="product-owl">
+                    <div>
+                        <a href="#">
+                            <span>
+                                <img src="assets/img/6-front.jpg" class="img-responsive" alt="Kellentes sagittis sodales accum etiam  lobortis purus dictum">
+                            </span>
+                        </a>
+                        <a href="#" class="link-product">Bellentes sagittis sodales accum etiam  lobortis purus dictum</a>
+                        <span class="price-product"><i class="fa fa-eur"></i>55.00</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -644,6 +694,7 @@ $(document).ready( function() {
             $("#slide-featured-prev").click(function(){
                 owlFeatured.trigger('owl.prev');
             });
+            $("a[rel^='prettyPhoto']").prettyPhoto();
         });
     </script>
 
